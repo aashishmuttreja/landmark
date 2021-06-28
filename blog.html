@@ -3,7 +3,25 @@
 <head> 
 
 	    <title>Lifestyle Blogger Site</title>
-  
+   
+	<meta name="ora.z_email" content="">
+  <meta name="ORA.z_cookie" content="Landmark">
+  <meta name="ORA.z_content_category" content="Winter Wear">
+  <meta name="ORA.z_pageofinterest" content="Jackets">
+  <meta name="ORA.z_event" content="Lifestyle Blogger Site">
+	
+<script>
+var allMetaElements = document.getElementsByTagName('meta');
+//loop through and find the element you want
+for (var i=0; i<allMetaElements.length; i++) { 
+  if (allMetaElements[i].getAttribute("name") == "ora.z_email") { 
+     //make necessary changes
+     allMetaElements[i].setAttribute('content', localStorage.email ? localStorage.email : 'Anonymous'); 
+     //no need to continue loop after making changes.
+     break;
+  } 
+}
+</script> 	
 
   
 	    <script>
